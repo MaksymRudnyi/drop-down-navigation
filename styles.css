@@ -1,0 +1,54 @@
+html body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav ol {
+    list-style: none;
+}
+
+header nav {
+    background-color: #2C2C32;
+}
+
+header nav ol li {
+    display: inline-block;
+    position: relative;
+}
+
+header nav ol li a {
+    display: block;
+    padding: 15px 25px;
+    color: #9d9d9d;
+    text-decoration: none;
+}
+
+header nav ol li a:hover {
+    color: #fff;
+}
+
+header nav ol li > ol {
+    position: absolute;
+    display: none;
+    padding: 0;
+}
+
+header nav ol li:hover > ol {
+    display: block;
+}
+
+header nav ol li:hover > ol li {
+    background-color: #2C2C32;
+    border-bottom: 1px solid #fff;
+    min-width: 170px;
+}
+
+header nav ol li:hover > ol li:first-child{
+    border-top: 1px solid #fff;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background: url('./bg.jpg') center center no-repeat;
+    background-size: cover;
+}
